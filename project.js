@@ -184,12 +184,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"main.scss":[function(require,module,exports) {
-var reloadCSS = require('_css_loader');
-
-module.hot.dispose(reloadCSS);
-module.hot.accept(reloadCSS);
-},{"/Users/nataliamaystrenko/my projects/interior-design/src/fonts/poiretone-regular-webfont.woff2":[["poiretone-regular-webfont.7232dfb4.woff2","fonts/poiretone-regular-webfont.woff2"],"fonts/poiretone-regular-webfont.woff2"],"/Users/nataliamaystrenko/my projects/interior-design/src/fonts/poiretone-regular-webfont.woff":[["poiretone-regular-webfont.cde7cb66.woff","fonts/poiretone-regular-webfont.woff"],"fonts/poiretone-regular-webfont.woff"],"/Users/nataliamaystrenko/my projects/interior-design/src/img/intro_bg.jpg":[["intro_bg.004f38e4.jpg","img/intro_bg.jpg"],"img/intro_bg.jpg"],"/Users/nataliamaystrenko/my projects/interior-design/src/img/test_bg.jpg":[["test_bg.7f1fcc10.jpg","img/test_bg.jpg"],"img/test_bg.jpg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -394,4 +389,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
-//# sourceMappingURL=/main.39afc03c.js.map
+//# sourceMappingURL=/project.js.map

@@ -3665,9 +3665,7 @@ function _nonIterableSpread() {
 var MicroModal = function () {
   var FOCUSABLE_ELEMENTS = ['a[href]', 'area[href]', 'input:not([disabled]):not([type="hidden"]):not([aria-hidden])', 'select:not([disabled]):not([aria-hidden])', 'textarea:not([disabled]):not([aria-hidden])', 'button:not([disabled]):not([aria-hidden])', 'iframe', 'object', 'embed', '[contenteditable]', '[tabindex]:not([tabindex^="-"])'];
 
-  var Modal =
-  /*#__PURE__*/
-  function () {
+  var Modal = /*#__PURE__*/function () {
     function Modal(_ref) {
       var targetModal = _ref.targetModal,
           _ref$triggers = _ref.triggers,
@@ -4472,9 +4470,7 @@ var _rollupPluginBabelHelpers3c58f0e = require("../_rollupPluginBabelHelpers-3c5
 var _utils = require("./utils.js");
 
 /** Provides details of changing input */
-var ActionDetails =
-/*#__PURE__*/
-function () {
+var ActionDetails = /*#__PURE__*/function () {
   /** Current input value */
 
   /** Current cursor position */
@@ -4602,9 +4598,7 @@ var _rollupPluginBabelHelpers3c58f0e = require("../_rollupPluginBabelHelpers-3c5
   @param {number} [details.removeCount] - Removed symbols count
   @param {number} [details.tailShift] - Additional offset if any changes occurred before tail
 */
-var ChangeDetails =
-/*#__PURE__*/
-function () {
+var ChangeDetails = /*#__PURE__*/function () {
   /** Inserted symbols */
 
   /** Can skip chars */
@@ -4660,9 +4654,7 @@ exports.default = void 0;
 var _rollupPluginBabelHelpers3c58f0e = require("../_rollupPluginBabelHelpers-3c58f0e3.js");
 
 /** Provides details of continuous extracted tail */
-var ContinuousTailDetails =
-/*#__PURE__*/
-function () {
+var ContinuousTailDetails = /*#__PURE__*/function () {
   /** Tail value as string */
 
   /** Tail start position */
@@ -4767,9 +4759,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /** Supported mask type */
 
 /** Provides common masking stuff */
-var Masked =
-/*#__PURE__*/
-function () {
+var Masked = /*#__PURE__*/function () {
   // $Shape<MaskedOptions>; TODO after fix https://github.com/facebook/flow/issues/4773
 
   /** @type {Mask} */
@@ -5230,9 +5220,7 @@ var DEFAULT_INPUT_DEFINITIONS = {
 
 exports.DEFAULT_INPUT_DEFINITIONS = DEFAULT_INPUT_DEFINITIONS;
 
-var PatternInputDefinition =
-/*#__PURE__*/
-function () {
+var PatternInputDefinition = /*#__PURE__*/function () {
   /** */
 
   /** */
@@ -5418,9 +5406,7 @@ var _continuousTailDetails = _interopRequireDefault(require("../../core/continuo
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var PatternFixedDefinition =
-/*#__PURE__*/
-function () {
+var PatternFixedDefinition = /*#__PURE__*/function () {
   /** */
 
   /** */
@@ -5576,9 +5562,7 @@ var _holder = _interopRequireDefault(require("../../core/holder.js"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var ChunksTailDetails =
-/*#__PURE__*/
-function () {
+var ChunksTailDetails = /*#__PURE__*/function () {
   /** */
   function ChunksTailDetails() {
     var chunks = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
@@ -5779,9 +5763,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   @param {string} opts.placeholderChar
   @param {boolean} opts.lazy
 */
-var MaskedPattern =
-/*#__PURE__*/
-function (_Masked) {
+var MaskedPattern = /*#__PURE__*/function (_Masked) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedPattern, _Masked);
   /** */
 
@@ -5870,7 +5852,7 @@ function (_Masked) {
 
         var char = pattern[i];
 
-        var _isInput = char in defs;
+        var _isInput = (char in defs);
 
         if (char === MaskedPattern.STOP_CHAR) {
           this._stops.push(this._blocks.length);
@@ -6497,9 +6479,7 @@ var _pattern = _interopRequireDefault(require("./pattern.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Pattern which accepts ranges */
-var MaskedRange =
-/*#__PURE__*/
-function (_MaskedPattern) {
+var MaskedRange = /*#__PURE__*/function (_MaskedPattern) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedRange, _MaskedPattern);
 
   function MaskedRange() {
@@ -6672,9 +6652,7 @@ var _range = _interopRequireDefault(require("./range.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Date mask */
-var MaskedDate =
-/*#__PURE__*/
-function (_MaskedPattern) {
+var MaskedDate = /*#__PURE__*/function (_MaskedPattern) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedDate, _MaskedPattern);
   /** Pattern mask for date according to {@link MaskedDate#format} */
 
@@ -6838,9 +6816,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   Generic element API to use with mask
   @interface
 */
-var MaskElement =
-/*#__PURE__*/
-function () {
+var MaskElement = /*#__PURE__*/function () {
   function MaskElement() {
     (0, _rollupPluginBabelHelpers3c58f0e.b)(this, MaskElement);
   }
@@ -6934,9 +6910,7 @@ var _maskElement = _interopRequireDefault(require("./mask-element.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Bridge between HTMLElement and {@link Masked} */
-var HTMLMaskElement =
-/*#__PURE__*/
-function (_MaskElement) {
+var HTMLMaskElement = /*#__PURE__*/function (_MaskElement) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(HTMLMaskElement, _MaskElement);
   /** Mapping between HTMLElement events and mask internal events */
 
@@ -7094,9 +7068,7 @@ var _htmlMaskElement = _interopRequireDefault(require("./html-mask-element.js"))
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var HTMLContenteditableMaskElement =
-/*#__PURE__*/
-function (_HTMLMaskElement) {
+var HTMLContenteditableMaskElement = /*#__PURE__*/function (_HTMLMaskElement) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(HTMLContenteditableMaskElement, _HTMLMaskElement);
 
   function HTMLContenteditableMaskElement() {
@@ -7218,9 +7190,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Listens to element events and controls changes between element and {@link Masked} */
-var InputMask =
-/*#__PURE__*/
-function () {
+var InputMask = /*#__PURE__*/function () {
   /**
     View element
     @readonly
@@ -7697,9 +7667,7 @@ var _pattern = _interopRequireDefault(require("./pattern.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Pattern which validates enum values */
-var MaskedEnum =
-/*#__PURE__*/
-function (_MaskedPattern) {
+var MaskedEnum = /*#__PURE__*/function (_MaskedPattern) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedEnum, _MaskedPattern);
 
   function MaskedEnum() {
@@ -7779,9 +7747,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
   @param {boolean} opts.normalizeZeros - Flag to remove leading and trailing zeros in the end of editing
   @param {boolean} opts.padFractionalZeros - Flag to pad trailing zeros after point in the end of editing
 */
-var MaskedNumber =
-/*#__PURE__*/
-function (_Masked) {
+var MaskedNumber = /*#__PURE__*/function (_Masked) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedNumber, _Masked);
   /** Single char */
 
@@ -8184,9 +8150,7 @@ var _base = _interopRequireDefault(require("./base.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Masking by RegExp */
-var MaskedRegExp =
-/*#__PURE__*/
-function (_Masked) {
+var MaskedRegExp = /*#__PURE__*/function (_Masked) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedRegExp, _Masked);
 
   function MaskedRegExp() {
@@ -8237,9 +8201,7 @@ var _base = _interopRequireDefault(require("./base.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Masking by custom Function */
-var MaskedFunction =
-/*#__PURE__*/
-function (_Masked) {
+var MaskedFunction = /*#__PURE__*/function (_Masked) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedFunction, _Masked);
 
   function MaskedFunction() {
@@ -8290,9 +8252,7 @@ var _factory = _interopRequireDefault(require("./factory.js"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /** Dynamic mask for choosing apropriate mask in run-time */
-var MaskedDynamic =
-/*#__PURE__*/
-function (_Masked) {
+var MaskedDynamic = /*#__PURE__*/function (_Masked) {
   (0, _rollupPluginBabelHelpers3c58f0e.d)(MaskedDynamic, _Masked);
   /** Currently chosen mask */
 
@@ -8891,6 +8851,27 @@ if (glideFeedback) {
       }
     }
   }).mount();
+}
+
+var glideProjects = document.querySelector('.glide--projects-slider');
+
+if (glideProjects) {
+  new _glide.default('.glide--projects-slider', {
+    type: 'carousel',
+    autoplay: 3000,
+    bound: true,
+    startAt: 0,
+    perView: 3,
+    gap: 16,
+    breakpoints: {
+      768: {
+        perView: 2
+      },
+      425: {
+        perView: 1
+      }
+    }
+  }).mount();
 } // header animation
 
 
@@ -8984,30 +8965,33 @@ if (filterWrapper && filterWrapper.length > 0) {
       });
     };
   });
-} // comparison
+} // // comparison
 
 
 var comparisonBlock = document.querySelectorAll(".comparison");
 
 if (comparisonBlock && comparisonBlock.length > 0) {
-  var imageBeforeContainer = document.querySelector(".comparison__img--before");
-  var imageBefore = imageBeforeContainer.querySelector("img");
-  var imageAfterContainer = document.querySelector(".comparison__img--after");
-  var imageAfter = imageAfterContainer.querySelector("img");
-  imageAfter.style.width = imageBefore.width + 'px';
-  imageAfter.style.height = imageBefore.height + 'px';
-  var range = document.querySelector(".comparison__input");
-  range.max = imageBefore.width;
-  range.value = imageBefore.width / 2;
+  comparisonBlock.forEach(function (element) {
+    var comparisonDivisor = element.querySelector(".comparison__divisor");
+    var comparisonHandle = element.querySelector(".comparison__handle");
+    var comparisonRange = element.querySelector(".comparison__input");
 
-  range.oninput = function () {
-    imageAfterContainer.style.width = this.value + "px";
-  };
+    comparisonRange.oninput = function () {
+      comparisonHandle.style.left = comparisonRange.value + "%";
+      comparisonDivisor.style.width = comparisonRange.value + "%";
+    };
+  });
 } // micromodal
 
 
-_micromodal.default.init(); // validation for form
+_micromodal.default.init();
 
+var micromodalLinks = document.querySelectorAll('a[data-micromodal-trigger]');
+micromodalLinks.forEach(function (item) {
+  item.addEventListener('click', function (e) {
+    e.preventDefault();
+  });
+}); // validation for form
 
 var phoneInput = document.querySelector('#user-phone');
 
@@ -9015,8 +8999,32 @@ if (phoneInput) {
   var phoneMask = (0, _imask.default)(document.getElementById('user-phone'), {
     mask: '+{7}(000)000-00-00'
   });
+} // scroll to top
+
+
+var scrollToTop = document.querySelector('.scroll-top');
+
+if (scrollToTop) {
+  scrollToTop.addEventListener('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  var _lastKnownScrollPosition = 0;
+  window.addEventListener('scroll', function (e) {
+    _lastKnownScrollPosition = window.scrollY;
+
+    if (_lastKnownScrollPosition < 100) {
+      scrollToTop.classList.add('scroll-top--hidden');
+    } else {
+      scrollToTop.classList.remove('scroll-top--hidden');
+    }
+  });
 }
-},{"@glidejs/glide":"../node_modules/@glidejs/glide/dist/glide.esm.js","micromodal":"../node_modules/micromodal/dist/micromodal.es.js","imask":"../node_modules/imask/esm/index.js"}],"../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"@glidejs/glide":"../node_modules/@glidejs/glide/dist/glide.esm.js","micromodal":"../node_modules/micromodal/dist/micromodal.es.js","imask":"../node_modules/imask/esm/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -9044,7 +9052,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50531" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56397" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -9220,5 +9228,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../usr/local/lib/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","main.js"], null)
 //# sourceMappingURL=/main.1f19ae8e.js.map
