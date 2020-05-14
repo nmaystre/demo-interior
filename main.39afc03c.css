@@ -516,6 +516,7 @@ a:hover, a:focus {
   text-transform: uppercase;
   border: 1px solid currentColor;
   transition: all 0.5s ease-out;
+  font-weight: 400;
 }
 .btn--diagonal:before {
   content: "";
@@ -533,7 +534,7 @@ a:hover, a:focus {
 .btn--diagonal:hover:not(:disabled), .btn--diagonal:focus:not(:disabled) {
   text-decoration: none;
   color: #4D4D4D;
-  outline-width: 0;
+  outline: 0;
 }
 .btn--diagonal:hover:not(:disabled):before, .btn--diagonal:focus:not(:disabled):before {
   transform: translateX(0);
